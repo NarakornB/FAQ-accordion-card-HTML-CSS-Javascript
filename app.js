@@ -29,10 +29,9 @@ function ShowElementsClicked(){
     document.body.addEventListener("click", function(event){
       const elementClassList = event.target.parentNode.classList;
 
-        // console.log(elementClassList.toString().startsWith('faq-')&&document.querySelector(`.${elementClassList.toString()} p:last-child`).style.display==="block")
-        // console.log(elementClassList.toString().startsWith('faq-')&&document.querySelector(`.${elementClassList.toString()} p:last-child`).style.display==="none")
-        // console.log(elementClassList.toString().startsWith('faq-')&&document.querySelector(`.${elementClassList.toString()} p:last-child`).style.display==="block")
-      if ( elementClassList.toString().startsWith('faq-')&&document.querySelector(`.${elementClassList.toString()} p:last-child`).style.display==="none"){
+        console.log(elementClassList)
+        
+        if ( elementClassList.toString().startsWith('faq-')&&document.querySelector(`.${elementClassList.toString()} p:last-child`).style.display==="none"){
 
         // ShowElement Click
         document.querySelector(`.${elementClassList.toString()} p:last-child`).style.display="block"
